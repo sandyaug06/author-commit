@@ -1,0 +1,14 @@
+package com.xoriant;
+
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.TemporalAccessor;
+
+public class Main {
+
+	public static void main(String[] args) {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmssSSSSSS");
+		TemporalAccessor parse = formatter.parse(new StringBuilder("20211025123450000000"));
+		System.out.println(parse);
+	}
+	
+}

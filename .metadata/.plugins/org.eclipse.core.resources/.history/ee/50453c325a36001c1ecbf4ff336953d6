@@ -1,0 +1,12 @@
+package com.xoriant;
+
+import java.time.format.DateTimeFormatter;
+
+public class Main {
+
+	public static void main(String[] args) {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmssSSSSSS");
+		DateTime dt = formatter.parseDateTime(new StringBuilder("20211025123450000000"));
+	}
+	
+}

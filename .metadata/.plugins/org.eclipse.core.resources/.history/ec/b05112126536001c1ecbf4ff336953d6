@@ -1,0 +1,22 @@
+package com.xoriant;
+
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.TemporalAccessor;
+
+import javax.swing.text.DefaultFormatter;
+
+public class Main {
+
+	public static void main(String[] args) {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmssSSSSSS");
+		TemporalAccessor parse = formatter.parse(new StringBuilder("20211025123450000000"));
+		
+		
+		
+	//	yyyy-mm-dd hh:mm:ss[.fffffffff]
+		
+	}
+	
+}
